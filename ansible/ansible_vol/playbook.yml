@@ -1,0 +1,12 @@
+---
+- name: Ansible Playbook init via docker image
+  hosts: DEV
+  become: true
+
+  tasks:
+    - name: create testfile
+      file:
+        path: /home/dark/testfilefromdocker.txt
+        state: touch
+        owner: dark
+        mode: 0755
