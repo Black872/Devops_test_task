@@ -3,6 +3,7 @@ FROM ubuntu:jammy
 ARG ssh_prv_key
 ARG ssh_pub_key
 
+
 WORKDIR /ansible
 
 COPY ./ssh_keys/ .
